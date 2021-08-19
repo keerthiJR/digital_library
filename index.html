@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Heroic Features - Start Bootstrap Template</title>
+        <title>Swamimalai Icons - Digital Library</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </head>
     
 
@@ -36,13 +37,10 @@
             </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid" id="cf">
+        <div class="container" id="cf">
             <!-- Jumbotron Header-->
-            <header class="jumbotron my-4">
-                <h1 class="display-3">Sudharsana Jwala Digital Library</h1>
-                <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-                <a class="btn btn-primary btn-lg" href="#!">Call to action!</a>-->
-            </header>
+         <img src="img/banner.jpg" class="img-fluid" alt="Responsive image">
+         </div>
             <!-- Page Features-->
            <!-- <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +61,21 @@
                 </div>
             
             </div>-->
-                <select id ="image-dropdown" >
+
+            <p style="margin-left: 2%; margin-right: 2%; margin-top: 3%;" >Sudharsana Jwala digital library (SJ digital 
+                library) is an online database consisting of the 3D models, 2D sketches of the icons, Dyana slogams, 
+                audio and video. SJ digital library serves as the reference for those who are interested to know more 
+                about the iconography. Based on the observations from the Shilpashastra, we have classified the deity 
+                forms into ten distinct categories. This will serve as a platform for the next generation artisans and 
+                enthusiasts to learn about the icons and forms.</p><br>
+               <div class="container-fluid" style="margin:20px 0 20px 0;">
+               <div class="row">
+               <div class="col-lg-2">
+               <p>Select the category</p>
+               </div>
+               <div class="col-lg-10">
+               <select id ="image-dropdown">
+                    <option value="0">Select</option>
                     <option value="1">Aayudhangal</option>
                     <option value="2">Amman</option>
                     <option value="3">BudhamJainam</option>
@@ -75,21 +87,24 @@
                     <option value="9">Vainavam</option> 
                     <option value="10">Other categories</option>                                 
                 </select> 
-              
+            </div>
+              </div>
+              </div>
+              </div>
         
                 
 
 
-
+              <div class="container-fluid">
         <div class="row text-center default">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_14.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
+                        ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -100,17 +115,18 @@
               <div class="card-body">
               <h4 class="card-title demo">Lakshmi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_14.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Hanuman_04.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
+						ar ar-modes="webxr scene-viewer quick-look" 
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -119,19 +135,20 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Hanuman</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Hanuman_04.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Poovaraagar_19.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
+						ar ar-modes="webxr scene-viewer quick-look"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -140,19 +157,20 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Poovaraagar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Poovaraagar_19.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_21.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
+						ar ar-modes="webxr scene-viewer quick-look"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -161,19 +179,20 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Ramanujar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_21.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaaka_moorthi_28.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
+						ar ar-modes="webxr scene-viewer quick-look"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -182,19 +201,20 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Varaaka moorthi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaaka_moorthi_28.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Shanmugam_14.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
+						ar ar-modes="webxr scene-viewer quick-look"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -203,111 +223,31 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Shanmugam</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Shanmugam_14.glb">Download</a></div>
         </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
-            <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
-                        alt=""
-                        shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
-                </model-viewer>
-                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            
-              <!-- Loads <model-viewer> for old browsers like IE11: -->
-              <script nomodule
-                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-              </script>
-              <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
-              </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+
+
+
         </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
-            <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
-                        alt=""
-                        shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
-                </model-viewer>
-                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            
-              <!-- Loads <model-viewer> for old browsers like IE11: -->
-              <script nomodule
-                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-              </script>
-              <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
-              </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
-            <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
-                        alt=""
-                        shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
-                </model-viewer>
-                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            
-              <!-- Loads <model-viewer> for old browsers like IE11: -->
-              <script nomodule
-                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-              </script>
-              <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
-              </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
-            <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
-                        alt=""
-                        shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
-                </model-viewer>
-                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            
-              <!-- Loads <model-viewer> for old browsers like IE11: -->
-              <script nomodule
-                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-              </script>
-              <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
-              </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
-        </div>
-        </div>
-        
     </div> 
     
 
 
 
-
+    <!-- Aayudhangal -->
+    <div class="container-fluid">
     <div class="row text-center Aayudhangal">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Aayudhangal_glb/Aayudhangal_Padmam_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -316,19 +256,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Padmam</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Aayudhangal_glb/Aayudhangal_Padmam_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Aayudhangal_glb/Aayudhangal_Veenai_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -337,23 +277,25 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Veenai</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Aayudhangal_glb/Aayudhangal_Veenai_02.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
-
+    <!-- Amman -->
+    <div class="container-fluid">
     <div class="row text-center Amman">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Bala Thirupurasundhari_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -362,19 +304,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Thirupurasundhari</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Bala Thirupurasundhari_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Bala Thirupurasundhari_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -383,19 +325,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Thirupurasundhari</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Bala Thirupurasundhari_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Kamakchi_03.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -404,19 +346,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Kamakchi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Kamakchi_03.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Kamakchi_04.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -425,19 +367,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Kamakchi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Kamakchi_04.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Sowdeshwari_05.glb" poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -446,25 +387,25 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Sowdeshwari</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Amman_glb/Amman_Sowdeshwari_05.glb">Download</a></div>
         </div>
         </div>
 
     </div>
+    </div>
 
-
-
+    <div class="container-fluid">
     <div class="row text-center BudhamJainam">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Budham & Jainam_glb
+/Budham & Jainam_Buddhar_01.glb" poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -473,19 +414,21 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Buddhar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Budham & Jainam_glb
+/Budham & Jainam_Buddhar_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Budham & Jainam_glb
+/Budham_&_Jainam_Theerththangarar_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -494,23 +437,26 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Theerththangarar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Budham & Jainam_glb
+/Budham_&_Jainam_Theerththangarar_02.glb">Download</a></div>
         </div>
         </div>
-
+</div>
     </div>
 
+    <div class="container-fluid">
     <div class="row text-center GramaDevadhai">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Grama Devadhai_glb
+/Grama_Devadhai_Bagavathi_Amman_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -519,19 +465,21 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Bagavathi Amman</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Grama Devadhai_glb
+/Grama_Devadhai_Bagavathi_Amman_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Grama Devadhai_glb
+/Grama_Devadhai_Bagavathi_Amman1_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -540,22 +488,25 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Bagavathi Amman</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Grama Devadhai_glb
+/Grama_Devadhai_Bagavathi_Amman1_01.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
+    <div class="container-fluid">
     <div class="row text-center Navagragangal">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Navagragangal_glb/Navagragangal_Keedhu_Bagavan_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -564,19 +515,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Keedu Bagavaan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Navagragangal_glb/Navagragangal_Keedhu_Bagaavan_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Navagragangal_glb/Navagragangal_Kuru_Bagavaan_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -585,19 +536,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Guru Bagavaan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Navagragangal_glb/Navagragangal_Kuru_Bagavaan_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Navagragangal_glb/Navagragangal_Raagu_Bagavaan_03.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -606,24 +557,24 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Raagu Bagavaan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Navagragangal_glb/Navagragangal_Raagu_Bagavaan_03.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
-
-
+<div class="container-fluid">
     <div class="row text-center Saivam">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Aathi_Sankarar_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -632,19 +583,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Aathi Sankarar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Aathi_Sankarar_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Abirami_02.glb"  poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -653,19 +603,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Abirami</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Abirami_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Amman_Left_03.glb" poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -674,19 +623,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Amman</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Amman_Left_03.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Amman_right_04.glb"  poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -695,19 +643,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Amman</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Amman_right_04.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Balamurugan_05.glb"  poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -716,19 +663,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Balamurugan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Balamurugan_05.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Bogashakthi_06.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -737,19 +684,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Bogashakthi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Bogashakthi_06.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Chithi_Puthi_Pillayar_07.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -758,19 +705,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Pillayar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Chithi_Puthi_Pillayar_07.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Manikkavasakar_08.glb"  poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -779,19 +725,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Manikkavasakar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Manikkavasakar_08.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Mayil_09.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -800,19 +746,18 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Mayil</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Mayil_09.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Nadaraajar_Maarukaal_Thandavam_10.glb" poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -821,19 +766,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Nataraajar Maarukaal Thandavam</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Nadaraajar_Maarukaal_Thandavam_10.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Nandhi_Mugam_11.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -842,19 +787,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Nandhi Mugam</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Nandhi_Mugam_11.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Nandhi_12.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -863,19 +808,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Nandhi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Nadaraajar_Nandhi_12.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Pillayar_13.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -884,19 +829,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Pillayar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Pillayar_13.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Shanmugam_14.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -905,19 +850,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Shanmugam</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Shanmugam_14.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Sivakami_15.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -926,19 +871,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Sivakami</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Sivakami_15.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Subramaniyar_16.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -947,19 +892,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Subramaniyar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Subramaniar_16.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Swamimalai_Murugan_17.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -968,19 +913,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Swamimalai Murugan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Swamimalai_Murugan_17.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Thasakireedan_18.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -989,19 +934,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Thasakireedan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Thasakireedan_18.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Vinayagar_19.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1010,19 +955,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Vinayagar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Vinayagar_19.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Vinayagar_20.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1031,19 +976,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Vinayagar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Vinayagar_20.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Vinayagar_21.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1052,23 +997,24 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Vinayagar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Saivam_glb/Saivam_Vinayagar_21.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
-
+    <div class="container-fluid">
     <div class="row text-center SidhargalMunivargal">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Sidhargal & Munivargal_glb/Sidhargal_&_Munivargal_Karuvurarar_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1077,19 +1023,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Karuvurarar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Sidhargal & Munivargal_glb/Sidhargal_&_Munivargal_Karuvurarar_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Sidhargal & Munivargal_glb/Sidhargal_&_Munivargal_Thiyagarajar_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1098,19 +1044,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Thiyagarajar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Sidhargal & Munivargal_glb/Sidhargal_&_Munivargal_Thiyagarajar_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Sidhargal & Munivargal_glb/Sidhargal_&_Munivargal_Viyakkarabadhar_03.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1119,23 +1065,24 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Viyakkkarabadhar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Sidhargal & Munivargal_glb/Sidhargal_&_Munivargal_Viyakkarabadhar_03.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
-
+    <div class="container-fluid">
     <div class="row text-center Vaahanangal">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vaahanangal_glb/Vaahanangal_Annam_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1144,19 +1091,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Annam</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vaahanangal_glb/Vaahanangal_Annam_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vaahanangal_glb/Vaahanangal_Gomadha_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1165,19 +1112,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Gomadha</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vaahanangal_glb/Vaahanangal_Gomadha_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vaahanangal_glb/Vaahanangal_Pasu_03.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1186,23 +1133,24 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Pasu</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vaahanangal_glb/Vaahanangal_Pasu_03.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
-
+    <div class="container-fluid">
     <div class="row text-center Vainavam">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Barathan_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1211,19 +1159,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Barathan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Barathan_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Boomadevi_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1232,19 +1180,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Boomadevi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Boomadevi_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Desikan_03.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1253,19 +1201,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Desikan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Desikan_03.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Hanuman_04.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1274,19 +1222,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Hanuman</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Hanuman_04.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Kaalinganarthana_Krishnan_05.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1295,19 +1243,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Kaalinganarthana Krishnan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Kaalinganarthana_Krishnan_05.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Kaalinganarthana_Krishnan_06.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1316,19 +1264,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Kaalinganarthana Krishnan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Kaalinganarthana_Krishnan_06.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_KarudaSevai_07.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1337,19 +1285,61 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Karudasevai</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_KarudaSevai_07.glb">Download</a></div>
+        </div>
+        </div>
+      <!--  <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
+            <div class="card h-100 box">
+                <model-viewer id="imm1" class="mod" src="hhttp://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Krishna_08.glb"
+                        poster=""
+                        alt=""
+                        shadow-intensity="1"
+                        camera-controls
+                        >
+                </model-viewer>
+                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            
+              <!-- Loads <model-viewer> for old browsers like IE11: -->
+            <!--  <script nomodule
+                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+              </script>
+              <div class="card-body">
+              <h4 class="card-title demo">Krishna</h4>
+              </div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Krishna_08.glb">Download</a></div>
+        </div>
+        </div> -->
+        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
+            <div class="card h-100 box">
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Laddu_krishna_09.glb"
+                        poster=""
+                        alt=""
+                        shadow-intensity="1"
+                        camera-controls
+                        >
+                </model-viewer>
+                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            
+              <!-- Loads <model-viewer> for old browsers like IE11: -->
+              <script nomodule
+                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+              </script>
+              <div class="card-body">
+              <h4 class="card-title demo">Krishna</h4>
+              </div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Laddu_Krishna_09.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi__Narayanan_10.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1358,19 +1348,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Lakshmi Narayanan</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi__Narayanan_10.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_Narashimmar_11.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1379,19 +1369,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Lakshmi Narashimmar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_Narashimmar_11.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_Narashimmar_12.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1400,19 +1390,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Lakshmi Narashimmar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_Narashimmar_12.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_13.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1423,17 +1413,16 @@
               <div class="card-body">
               <h4 class="card-title demo">Lakshmi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_13.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_14.glb"
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1444,17 +1433,17 @@
               <div class="card-body">
               <h4 class="card-title demo">Lakshmi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Lakshmi_14.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Manavaalamaamunikal_15.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1463,19 +1452,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Manavaalamaamunikal</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Manavaalamaamunikal_15.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Nammaazhvar_16.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1484,19 +1473,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Nammaazhvar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Nammaazhvar_16.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Perumal_17.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1505,19 +1494,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Perumal</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Perumal_17.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Perumal_18.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1526,19 +1515,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Perumal</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Perumal_18.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Poovaraagar_19.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1547,19 +1536,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Poovaraagar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Poovaraagar_19.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Raaja_Rishi_20.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1568,19 +1557,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Raaja Rishi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Raaja_Rishi_20.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_21.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1589,19 +1578,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Ramanujar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_21.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_22.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1610,19 +1599,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Ramanujar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_22.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_23.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1631,19 +1620,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Ramanujar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_23.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_24.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1652,19 +1641,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Ramanujar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Ramanujar_24.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Sri_Dhevi_25.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1673,19 +1662,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Sri Devi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Sri_Dhevi_25.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Sri_Dhevi_26.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1696,17 +1685,17 @@
               <div class="card-body">
               <h4 class="card-title demo">Lakshmi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Sri_Dhevi_26.glb">Sri Devi</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Srinivasa_Perumal_27.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1715,19 +1704,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Srinivasa Perumal</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Srinivasa_Perumal_27.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaaka_moorthi_28.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1736,19 +1725,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Varaaka moorthi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaaka_moorthi_28.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaakar_29.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1757,19 +1746,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Vaarakar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaakar_29.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaakar_30.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1778,64 +1767,24 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Varaakar</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
-            <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
-                        alt=""
-                        shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
-                </model-viewer>
-                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            
-              <!-- Loads <model-viewer> for old browsers like IE11: -->
-              <script nomodule
-                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-              </script>
-              <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
-              </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
-            <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
-                        poster=""
-                        alt=""
-                        shadow-intensity="1"
-                        camera-controls
-                        auto-rotate ar>
-                </model-viewer>
-                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-            
-              <!-- Loads <model-viewer> for old browsers like IE11: -->
-              <script nomodule
-                  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-              </script>
-              <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
-              </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Vainavam_glb/Vainavam_Varaakar_30.glb">Download</a></div>
         </div>
         </div>
     </div>
+    </div>
 
+    <div class="container-fluid">
     <div class="row text-center Othercategories">
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Other categories_glb/Other_categories_Aathiantha_Pirabhu_01.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1844,19 +1793,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Aathinatha Prabhu</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Other categories_glb/Other_categories_Aathiantha_Pirabhu_01.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Other categories_glb/Other_categories_Elephant_Face_02.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                       >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1865,19 +1814,19 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Elephant Face</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Other categories_glb/Other_categories_Elephant_Face_02.glb">Download</a></div>
         </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 " id ="maincard">
             <div class="card h-100 box">
-                <model-viewer id="imm1" class="mod" src="https://cdn.glitch.com/5487d456-ec6f-4242-9cf4-919e4d374213/lakshmi _glb_NewOrientation.glb?v=1622200511747"
+                <model-viewer id="imm1" class="mod" src="http://sudharshnajwala.in/digital/assets/Other categories_glb/Other_categories_Rishi_03.glb"
                         poster=""
                         alt=""
                         shadow-intensity="1"
                         camera-controls
-                        auto-rotate ar>
+                        >
                 </model-viewer>
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
             
@@ -1886,14 +1835,14 @@
                   src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
               </script>
               <div class="card-body">
-              <h4 class="card-title demo">Lakshmi</h4>
+              <h4 class="card-title demo">Rishi</h4>
               </div>
-            <div class="card-footer"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=17NbreNXPGW8XVJxfWLci6rs13aztMnjT">Download</a></div>
+            <div class="card-footer"><a class="btn btn-primary" href="http://sudharshnajwala.in/digital/assets/Other categories_glb/Other_categories_Rishi_03.glb">Download</a></div>
         </div>
         </div>
     </div>
 
-
+</div>
 
 
 

@@ -16,7 +16,7 @@ $(document).ready(function() {
 $(function () {
     $("#image-dropdown").change(function () {
         if ($(this).val() == "1") {
-            $('.default').hide();
+          $('.default').hide();
           $('.Aayudhangal').show();
           $('.Amman').hide();
           $('.BudhamJainam').hide();
